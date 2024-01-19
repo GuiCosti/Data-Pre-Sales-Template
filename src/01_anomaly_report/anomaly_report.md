@@ -19,7 +19,7 @@ After conducting an exploratory data analysis on the information provided about 
 
 To keep searching for anomalies, there are some KPIs and Metrics that could be used:
 
-- **Sales, Profit, Quantity and Discounts:** As can observed in the dataset, there are a lot of outliers on these dimensions. Track total sales/profit/discount/quantity over time and identify significant deviations, combine this with the sasonality that is clearly observable in the Order Date histogram can keep the business healthy. Create some feature engineering, like calculate the profit margin (Sales/Profit), unity price (Sales/Quantity) and unity price ignoring discount (Sales * (1 + Discount)/Quantity) can help identifing anomalies as well.
+- **Sales, Profit, Quantity and Discounts:** As can observed in the dataset, there are a lot of outliers on these dimensions. Track total sales/profit/discount/quantity over time and identify significant deviations, combine this with the sasonality that is clearly observable in the Order Date histogram can keep the business healthy. Create some feature engineering, like calculate the profit margin (Profit/Sales), unity price (Sales/Quantity) and unity price ignoring discount (Sales * (1 + Discount)/Quantity) can help identifing anomalies as well.
 
 - **Order Time:** create metrics like average date between order and ship dates can help identify anomalies on deliveries or processing issues.
 
